@@ -3,6 +3,7 @@ import os
 import sys
 
 import redis
+import sqlalchemy
 from flask import Flask
 
 app = Flask(__name__)
@@ -25,6 +26,7 @@ def hello_world():
         "Hello World\n"
         f"python version: {sys.version}\n"
         f"Redis ({redis.__version__}) capital: {capital}\n"
+        f"sqlalchemy ({sqlalchemy.__version__})\n"
     )
 
 
