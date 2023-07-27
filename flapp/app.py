@@ -2,9 +2,15 @@
 import os
 import sys
 
-import redis
-import sqlalchemy
+
 from flask import Flask
+
+
+import sqlalchemy
+
+
+import redis
+
 
 app = Flask(__name__)
 
